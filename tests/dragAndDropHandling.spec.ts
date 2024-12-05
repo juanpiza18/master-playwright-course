@@ -20,7 +20,7 @@ test("Drag and Drop - Approach 1", async ({ page }) => {
   await page.close();
 });
 
-test.only("Drag and Drop - Approach 2", async ({ page }) => {
+test("Drag and Drop - Approach 2", async ({ page }) => {
   await page.goto(
     "http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html"
   );
