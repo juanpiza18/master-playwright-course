@@ -34,7 +34,11 @@ export default defineConfig({
     trace: "on-first-retry",
     headless: true,
   },
-
+  grep: [
+    new RegExp("@smoke"),
+    new RegExp("@sanity"),
+    new RegExp("@regression"),
+  ],
   /* Configure projects for major browsers */
   projects: [
     {
