@@ -17,7 +17,7 @@ test.afterEach(async ({}) => {
   await page.close();
 });
 
-test.only("Add items and Checkout test", async ({}) => {
+test("Add items and Checkout test", async ({}) => {
   await page.locator("#add-to-cart-sauce-labs-backpack").click();
   await page.locator(".shopping_cart_link").click();
   const items = await page.locator(".cart_item").elementHandles();
@@ -26,7 +26,7 @@ test.only("Add items and Checkout test", async ({}) => {
   await expect(page.locator(".title")).toHaveText("Checkout: Your Information");
 });
 
-test.only("Add items and remove from Cart test", async ({}) => {
+test("Add items and remove from Cart test", async ({}) => {
   await page.locator("#add-to-cart-sauce-labs-backpack").click();
   await page.locator(".shopping_cart_link").click();
   const cartItems = page.locator(".cart_item").elementHandles();
