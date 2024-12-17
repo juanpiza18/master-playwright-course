@@ -9,7 +9,7 @@
     "open:reports": "npx allure open ./allure-report",
     "pretest": "npm run clean:reports",
     "posttest": "npm run generate:reports && npm run open:reports",
-    "execute:script": "npx playwright test readJsonData.spec.ts --headed --project=chromium",
+    "execute:script": "npx playwright test --headed --project=chromium",
     "test": "npm run execute:script || npm run posttest"
   },
   "keywords": [],

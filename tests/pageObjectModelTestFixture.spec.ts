@@ -1,6 +1,6 @@
 import { test, expect } from "../fixtures/pomFixtures";
 
-test.only("Login Conduit Test using POM", async ({
+test("Login Conduit Test using POM", async ({
   page,
   landingPage,
   homePage,
@@ -21,7 +21,7 @@ test.only("Login Conduit Test using POM", async ({
   await page.close();
 });
 
-test.only("Login Conduit Test using POM 2", async ({
+test("Login Conduit Test using POM 2", async ({
   page,
   landingPage,
   homePage,
